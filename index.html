@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cool Button Launcher</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .launch-button {
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      color: white;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .launch-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <button class="launch-button" onclick="openGame()">Launch Super Smash Bros.</button>
+
+  <script>
+    function openGame() {
+      window.open("https://orson-sander.github.io/super-smash-bros/", "_blank");
+    }
+  </script>
+</body>
+</html>
